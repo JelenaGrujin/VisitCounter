@@ -1,0 +1,5 @@
+RewriteEngine on
+
+RewriteCond %{REQUEST_FILENAME} !\.(js|jpg|png|pdf|css)$
+
+RewriteRule ^([^/]+)/? index.php?url=$1 [L,QSA]
